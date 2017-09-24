@@ -1,0 +1,186 @@
+@CHARSET "UTF-8";
+
+html, body { margin: 0; padding: 0; }
+body { background-color: #DDD;}
+
+h1,h2{
+	text-align: center;
+}
+		
+#container {
+	display: flex;
+	-ms-display: flex;
+	-moz-display: flex;
+	-webkit-display: flex;
+	flex-direction: column;
+    margin: auto;
+}
+
+#MainContainer{
+	display: flex;
+	flex-direction: column;
+    margin: auto;
+    width: 800px;
+}
+
+#rowContainer{
+	display: flex;
+    margin: 5px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header {
+	text-align: center;
+}
+#content {
+	display: flex;
+    border: 1px solid #000;
+	flex-direction: column;
+    width: 100%;
+}
+#footer {
+	text-align: right;
+    clear: both;
+}
+
+label.nom{
+	display : inline-block;
+	text-align: right;
+	width: 150px;
+    margin: 5px;
+}
+
+label.prix{
+	display : inline-block;
+	text-align: right;
+	width: 60px;
+    margin: 5px;
+}
+
+.input{
+	flex:5;
+	min-width:70px;
+	width: 70px;
+    margin: 5px;
+    padding: 5px;
+     border-radius: 8px;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    
+}
+
+.input:focus {
+    margin: auto;
+    margin: 5px;
+    padding: 5px;
+     border-radius: 8px;
+     box-shadow: 0 1px 1px rgba(102, 102, 255, 0.8);
+}
+
+.button{
+    padding: 5px;
+     cursor: pointer;
+     border-radius: 8px;
+	min-width: 100px;
+	height: 30px;
+    margin: auto;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.button.add{
+	font-size: 20px;
+	font-weight: bold;
+	min-width: 30px;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+    -webkit-transition: -webkit-transform 2s; /* Safari */
+    transition: transform 2s;
+}
+
+.button.add:hover {
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+}
+
+
+.divTable
+{
+   width: 100%;
+	text-align: center;
+    display: table;
+    margin: auto;
+    border-spacing:5px;/*cellspacing:poor IE support for  this*/
+   /* border-collapse:separate;*/
+}
+
+.divRow
+{
+   display:table-row;
+    margin: auto;
+}
+
+.divCell
+{
+    float:left;/*fix for  buggy browsers*/
+    display:table-column;
+    text-align:center;
+    margin: auto;
+    width:24%;
+}
+
+
+.divCell.double{
+    width:48%;
+}
+
+.divCell.triple{
+    width:72%;
+}
+
+.divCell.quadruple{
+    width:96%;
+}
+    
+.blind {
+	margin: 30px;
+	height: 300px;
+    transition-property: width;
+    transition-duration: 10s;
+    transition-timing-function: linear;
+}
+.blind.close {
+	width: 300px !important; 
+}
+
+.AC {
+	margin: 30px;
+	width: 300px;
+	height: 300px;
+}
+
+.light {
+	margin: 30px;
+	width: 200px;
+	height: 300px;
+}
+
+.Private_Button {
+	margin: 30px;
+	width: 100px;
+	height: 100px;
+}
+
+.MUR_Button {
+	margin: 30px;
+	width: 100px;
+	height: 100px;
+}
+/*
+canvas{
+	width: 1000px;
+	height: 500px;
+	background-image: url(img/curtainLeft.jpg);
+    background-repeat: no-repeat;
+}*/
